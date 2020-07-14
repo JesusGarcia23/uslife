@@ -1,8 +1,13 @@
 import React from 'react';
+import {Container, Content } from './styles';
 
 const LandingPage = () => {
     return (
-        <div>Hello</div>
+        <Container>
+            <Content>
+                
+            </Content>
+        </Container>
     )
 }
 
