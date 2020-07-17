@@ -5,7 +5,6 @@ const LandingPage = () => {
     return (
         <Container>
             <Content>
-                
             </Content>
         </Container>
     )
