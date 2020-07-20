@@ -78,11 +78,11 @@ width: 50%;
      justify-content: space-between;
  }
 
- > div > input, select {
+ > div > input {
     border: 0px;
     border-radius: 7px;
     height: 35px;
-    width: 45%;
+    width: 55%;
     margin: 10px 0px;
     text-align: center;
 };

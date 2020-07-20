@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {Container, Content, Form } from './styles';
+import { registerAccount } from './utils/signup';
 
 const SignupPage = (props) => {
 
@@ -17,10 +18,15 @@ const SignupPage = (props) => {
     const onSubmitLogin = (event) => {
         event.preventDefault();
         console.log("Hello")
-    }
+       const user = {
+            email,
+            state,
+            zipCode,
+            password,
+            secondPassword
+        }
 
-    const goToSignup = () => {
-        props.history.push('/signup')
+        registerAccount(user);
     }
 
     return (
@@ -30,13 +36,8 @@ const SignupPage = (props) => {
                 <Form onSubmit={e => onSubmitLogin(e)}>
                     <input type='text' placeholder='email' value={email} onChange={e => setEmail(e.target.value)}></input>
                     <div>
-                    <select name="cars" id="cars">
-                        <option value="volvo">State</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                    </select>
-                    <input type='text' placeholder='Zip code' value={password} onChange={e => setPassword(e.target.value)}></input>
+                    <input type='text' placeholder='State' maxLength='2' value={state} onChange={e => setState(e.target.value)} style={{width: '30%'}}></input>
+                    <input type='text' placeholder='Zip code' value={zipCode} onChange={e => setZipCode(e.target.value)}></input>
                     </div>
                     <input type='password' placeholder='password' value={password} onChange={e => setPassword(e.target.value)}></input>
                     <input type='password' placeholder='Confirm password' value={secondPassword} onChange={e => setSecondPassword(e.target.value)}></input>
