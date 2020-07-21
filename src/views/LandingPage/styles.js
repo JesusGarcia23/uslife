@@ -35,6 +35,10 @@ box-shadow: 2px 3px 3px 0 rgba(0, 0, 0, 0.6), 0 2px 20px 0 rgba(0, 0, 0, 0.69);
   color: #649cf7;
 }
 
+> a:hover {
+  color: #99bdf7;
+}
+
 > button {
   margin-top: 30px;
   height: 40px;
