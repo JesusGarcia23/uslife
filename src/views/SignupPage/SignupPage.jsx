@@ -41,7 +41,7 @@ const SignupPage = (props) => {
                     </div>
                     <input type='password' placeholder='password' value={password} onChange={e => setPassword(e.target.value)}></input>
                     <input type='password' placeholder='Confirm password' value={secondPassword} onChange={e => setSecondPassword(e.target.value)}></input>
-                    <button type='submit'>Sign Up</button>
+                    <button type='submit'>Register</button>
                 </Form>
                 <Link to='/'>Sign in</Link>
             </Content>
