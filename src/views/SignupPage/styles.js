@@ -108,4 +108,12 @@ width: 50%;
    background-color: #4b77be;
 
  }
+
+ @media screen and (max-width: 500px) {
+  width: 75vw;
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px){
+width: 60vw;
+}
 `

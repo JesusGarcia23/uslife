@@ -42,7 +42,7 @@ box-shadow: 2px 3px 3px 0 rgba(0, 0, 0, 0.6), 0 2px 20px 0 rgba(0, 0, 0, 0.69);
 > button {
   margin-top: 30px;
   height: 40px;
-  width: 340px;
+  width: 310px;
   border: 0px;
   background-color: #806130;
   border-radius: 2px;
@@ -57,9 +57,13 @@ box-shadow: 2px 3px 3px 0 rgba(0, 0, 0, 0.6), 0 2px 20px 0 rgba(0, 0, 0, 0.69);
   background-color: #be924b;
 }
 
-@media (max-width: 900px) {
-    width: 85vw;
+@media screen and (max-width: 500px) {
+    width: 70vw;
   }
+
+@media screen and (min-width: 501px) and (max-width: 900px){
+  width: 60vw;
+}
 ` 
 
 export const Form = styled.form`
@@ -94,4 +98,12 @@ width: 50%;
    background-color: #4b77be;
 
  }
+
+ @media screen and (max-width: 500px) {
+  width: 75vw;
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px){
+width: 60vw;
+}
 `
